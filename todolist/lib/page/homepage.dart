@@ -14,7 +14,7 @@ class _HomepageState extends State<Homepage> {
   List toDoList = [
     ['กินท่อม', false],
     ['ซอยจุ๊', false],
-    ['PromtBid', false],
+    ['Promtบิด', false],
   ];
 
   void checkboxchanged(int index) {
@@ -39,14 +39,13 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFf39376), 
+      backgroundColor: const Color(0xFFf39376),
       appBar: AppBar(
         title: const Text('ตารางผจญภัยวันนี้'),
         centerTitle: true,
-        backgroundColor: Color(0xFF2980B9), 
+        backgroundColor: Color(0xFF2980B9),
         foregroundColor: Colors.white,
       ),
-
       body: ListView.builder(
         itemCount: toDoList.length,
         itemBuilder: (BuildContext context, index) {
@@ -66,15 +65,13 @@ class _HomepageState extends State<Homepage> {
               child: TextField(
                 controller: _controllers,
                 decoration: InputDecoration(
-                  hintText: 'ใส่มันมาเลยที่รัก อิอิ',
-                  filled: true,
-                  fillColor: Colors.deepPurple.shade200,
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.deepPurple),
-                    borderRadius: BorderRadius.circular(15)),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.deepPurple),
-                    borderRadius: BorderRadius.circular(15))),
+                    hintText: 'ใส่มันมาเลยที่รัก อิอิ',
+                    filled: true,
+                    fillColor: Colors.deepPurple.shade200,
+                    enabledBorder:
+                        OutlineInputBorder(borderSide: const BorderSide(color: Colors.deepPurple), borderRadius: BorderRadius.circular(15)),
+                    focusedBorder:
+                        OutlineInputBorder(borderSide: const BorderSide(color: Colors.deepPurple), borderRadius: BorderRadius.circular(15))),
               ),
             ),
           ),
